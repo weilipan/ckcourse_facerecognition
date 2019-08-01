@@ -2,6 +2,7 @@
 # 版本：V2.0
 # 製作人員:建國高中資訊科潘威歷老師
 # 將相機當成攝影機用，利用while迴圈重複相機的動作就會得到攝影機的結果。
+# 06_02是直接使用face_recognition已訓練好的檔案進行判斷。
 from face_recognition import face_locations, face_encodings, load_image_file, compare_faces
 import cv2
 from PIL import ImageFont, ImageDraw, Image
