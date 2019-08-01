@@ -87,7 +87,7 @@ def show_prediction_labels_on_image(img_folder,img_path, predictions):
 
     # 輸入中文字用
     pil_im = Image.fromarray(unknown_image)
-    fontPath = "../edukai-3.ttf"
+    fontPath = "../font/edukai-3.ttf"
     font = ImageFont.truetype(fontPath, 15)
     # 準備畫框及寫上文字
     draw = ImageDraw.Draw(pil_im)

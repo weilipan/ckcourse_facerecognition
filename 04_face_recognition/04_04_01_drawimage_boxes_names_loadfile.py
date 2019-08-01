@@ -33,7 +33,7 @@ known_faces_encodings=list(known_faces.values())
 
 # 輸入中文字用
 pil_im = Image.fromarray(unknown_image)
-fontPath = "../edukai-3.ttf"
+fontPath = "../font/edukai-3.ttf"
 font = ImageFont.truetype(fontPath, 8)
 # 準備畫框及寫上文字
 draw = ImageDraw.Draw(pil_im)
