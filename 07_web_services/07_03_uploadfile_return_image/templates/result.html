@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>辨識結果</title>
+</head>
+<body>
+    辨識結果
+    {% if result %}
+        <table>
+            <tbody>
+                <tr>
+                    <td><img src="{{result}}"></td>
+                </tr>
+            </tbody>
+        </table>
+    {% else %}
+        No results :(
+    {% endif %}
+    <a href="{{ orul }}">回首頁</a>
+</body>
+</html>
