@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">即時串流影像人臉辨識服務-單張照片版本</h1>
+      <img src="{{ url_for('facerec.video_feed') }}">
+    </div>
+  </div>
+{% endblock content %}
