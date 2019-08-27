@@ -1,12 +1,6 @@
 # ckcourse_facerecognition
 建中資訊科潘威歷老師:人臉辨識課程
 
-【前情提要】
-因為樹莓派跑不動機器學習（如果量大的話），所以只好又回來使用windows。
-windows要使用face recognition，第一個會遇到的問題是dlib裝不起來。
-這時候要配合anaconda來處理，但目前的dlib版本只有支援到python3.6，但是最新版的anaconda已經到3.7了。
-所以要教大家來安裝。
-
 # 【模擬環境建置步驟】
 1. 開啟anaconda Prompt
 2. 先將路徑移至我們要測試的資料夾
@@ -32,7 +26,7 @@ windows要使用face recognition，第一個會遇到的問題是dlib裝不起�
 
 # 【相關所需硬體】
 1. 簡配：含前鏡頭的筆電。
-2. 小全配：含網路攝影機的電腦主機。
+2. 小全配：電腦主機+網路攝影機。
 3. 大全配：樹莓派+相機模組+筆電。
 4. 超值全餐：樹莓派+相機模組+筆電+手機。
 
@@ -82,6 +76,20 @@ windows要使用face recognition，第一個會遇到的問題是dlib裝不起�
 4. 將比對後的資料以文字訊息呈現出來。
 5. 將辨識後的結果（姓名、文字）直接與影像結合呈現出來。
 
+# 【樹莓派KNN環境建置步驟】
+1. 請確定opencv已安裝好了（自行上網搜尋安裝方式，我自己是看這篇[https://www.pyimagesearch.com/2018/09/26/install-opencv-4-on-your-raspberry-pi/](https://)）。
+2. KNN需要使用scikit-learn套件，使用前需要先安裝。
+
+> 如果沒有pip3，請用語法先行安裝：sudo apt-get remove python3-pip; sudo apt-get install python3-pip
+> 
+> 如果套件有衝突，請用下方語法再裝一次
+> 
+> pip3 uninstall -y numpy scipy pandas scikit-learn
+> 
+> sudo apt update
+> 
+> sudo apt install python3-numpy python3-scipy python3-matplotlib python3-pandas python3-sklearn
+
 # 單元五 KNN人臉辨識操作
 > 為了加強判斷精準度，我們導入KNN機器學習演算法。
 
@@ -101,7 +109,7 @@ windows要使用face recognition，第一個會遇到的問題是dlib裝不起�
 
 
 # 單元六 AR擴增實境基礎實作
-1. 啟動網路攝影機。
+1. 啟動攝影機。
 2. 每拍一張影像便進行人臉辨識，利用攝影機造成即時辨識人名的效果（基礎AR擴增實境的效果）。
 3. 可自行選擇要直接使用face recognition套件或利用KNN演算法訓練好的資料進行處理。
 
