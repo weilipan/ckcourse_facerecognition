@@ -17,7 +17,7 @@
    接著進入上述檔案所在位置。
    pip install dlib-19.8.1-cp36-cp36m-win_amd64.whl
    pip install numpy scipy matplotlib ipython jupyter pandas sympy nose
-   pip install -U scikit-learn
+   pip install scikit-learn==0.20.3
    pip install opencv-contrib-python
    pip install face_recognition 
 7. 已經整理好的套件檔可以用下列指令安裝 requirements.txt
